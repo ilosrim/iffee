@@ -24,13 +24,17 @@ export const Navbar = styled.div`
   flex-direction: column;
   margin-top:87px;
   ul{
-    margin-top: 21px;
+    margin: 21px 0 123px;
     li{
       list-style: none;
       display: flex;
       align-items: center;
+      margin-top:35px;
+      color: ${colors.link};
       a{
         text-decoration: none;
+        margin-left:25px;
+        color: ${colors.link};
       }
       svg{
         width: 20px;
@@ -39,12 +43,73 @@ export const Navbar = styled.div`
     }
   }
 `;
+
+const getColor = ({type}) => {
+  switch(type){
+    case 'blue': return `#3F7EF8`;
+    case 'red': return `#FA6C6A`;
+    case 'lightblue': return `#27C1B3`;
+    default: return `#000000`;
+  }
+}
+export const NavLinks = styled.ul`
+  margin:21px 0 123px;
+  li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top:35px;
+    color: ${colors.link};
+    a{
+      text-decoration: none;
+      margin-left:25px;
+      color: ${colors.link};
+    }
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+    .circle{
+      width:15px;
+      height:15px;
+      border-radius:50%;
+    }
+    .blue{
+      border: 1px solid #3F7EF8;
+    }
+    .red{
+      border: 1px solid #FA6C6A;
+    }
+    .lightblue{
+      border: 1px solid #27C1B3;
+    }
+  }
+`
 export const Title = styled.div`
   font-size: 14px;
   line-height: 17px;
   color: ${colors.title};
 `;
-
+export const UserBox = styled.div`
+  width: 183px;
+  height: 63px;
+  background: #F9FAFF;
+  border-radius: 5px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 10px;
+  img{
+    margin-right:5px;
+  }
+  select{
+    pedding-right:15px !important;
+    border:none;
+    outline:none;
+    color: ${colors.title};
+    background:transparent;
+  }
+`
 // body section
 export const Bodys = styled.div`
   width: 100%;
