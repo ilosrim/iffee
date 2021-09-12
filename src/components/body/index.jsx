@@ -1,8 +1,8 @@
 import React from 'react'
 import { Bodys, Top } from '../styles/style'
 import { BsSearch } from 'react-icons/bs';
-import { IoNotificationsOutline } from 'react-icons/io';
-import { AiOutlineUser } from 'react-icons/ai'
+// import { IoNotificationsOutline } from 'react-icons/io';
+// import { AiOutlineUser } from 'react-icons/ai'
 
 export const Body = () => {
   return (
