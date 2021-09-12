@@ -44,14 +44,7 @@ export const Navbar = styled.div`
   }
 `;
 
-const getColor = ({type}) => {
-  switch(type){
-    case 'blue': return `#3F7EF8`;
-    case 'red': return `#FA6C6A`;
-    case 'lightblue': return `#27C1B3`;
-    default: return `#000000`;
-  }
-}
+
 export const NavLinks = styled.ul`
   margin:21px 0 123px;
   li{
@@ -103,15 +96,80 @@ export const UserBox = styled.div`
     margin-right:5px;
   }
   select{
-    pedding-right:15px !important;
+    padding-right:15px !important;
     border:none;
     outline:none;
     color: ${colors.title};
     background:transparent;
   }
 `
+
 // body section
 export const Bodys = styled.div`
   width: 100%;
   border: 1px solid #f2f2f2;
+  background-color: #FBFCFF;
 `;
+export const Top = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 24px 45px;
+  .inputOne{
+    width: 517px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left:15px;
+    margin-right:34px;
+    svg{
+      font-size: 22px;
+      margin-right: 15px;
+    }
+    input{
+      border:none;
+      outline:none;
+      :placeholder{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #000000;
+        opacity: 0.4;
+      }
+    }
+  }
+  .inputTwo{
+    width: 310px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    select{
+      outline:none;
+      border:none;
+      background:transparent;
+      padding-right:115px;
+      font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #000000;
+        opacity: 0.4;
+    }
+  }
+
+  .register{
+    display:flex;
+    align-items:center;
+  }
+`
