@@ -171,5 +171,8 @@ export const Top = styled.div`
   .register{
     display:flex;
     align-items:center;
+    justify-content: space-between;
+    width: 120px;
+    margin-left: 30px;
   }
 `

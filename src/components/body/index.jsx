@@ -1,8 +1,9 @@
-import React from 'react'
-import { Bodys, Top } from '../styles/style'
+import React from 'react';
+import { Bodys, Top } from '../styles/style';
 import { BsSearch } from 'react-icons/bs';
-// import { IoNotificationsOutline } from 'react-icons/io';
-// import { AiOutlineUser } from 'react-icons/ai'
+import { IoNotificationsOutline } from 'react-icons/io5';
+import { AiOutlineUser } from 'react-icons/ai';
+import User from '../../img/user.png';
 
 export const Body = () => {
   return (
@@ -18,6 +19,11 @@ export const Body = () => {
             <option value="">BMW</option>
             <option value="">Nexia</option>
           </select>
+        </div>
+        <div className="register">
+          <IoNotificationsOutline />
+          <AiOutlineUser />
+          <img src={User} alt='User pic.' />
         </div>
       </Top>
     </Bodys>
